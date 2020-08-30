@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+}
+<!doctype html>
+<html>
+<head>
+    <title>Hello ASP.NET MVC Core</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    @foreach (var user in (DemoAPI.Models.User[])ViewData["users"])
+     {
+        <h2>@user.Name @user.Surname @user.Status </h2>
+     }
+</body>
+</html>

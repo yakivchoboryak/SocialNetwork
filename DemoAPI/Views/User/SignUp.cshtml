@@ -1,0 +1,38 @@
+﻿@{
+}
+<!doctype html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <div class="signupform">
+        <form action="/User/SignUp" method="post">
+            <label for="text">Username</label><br />
+            <input type="text" name="Username" required /><br />
+
+            <label for="text">Password</label><br />
+            <input type="text" name="Password" required /><br />
+
+            <label for="text">Name</label><br />
+            <input type="text" name="Name" required /><br />
+
+            <label for="text">Surname</label><br />
+            <input type="text" name="Surname" required /><br />
+
+            <label for="text">Patronymic</label><br />
+            <input type="text" name="Patronymic" value="" required /><br />
+
+            <label for="text">Email</label><br />
+            <input type="text" name="Email" required /><br />
+
+            <label for="text">Birthday</label><br />
+            <input type="date" name="Birthday" required /><br />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>
