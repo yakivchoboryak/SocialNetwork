@@ -16,7 +16,9 @@ namespace DemoAPI.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Patronymic { get; set; }
-        
+        /// <summary>
+        /// 
+        /// </summary>
         public string Email { get; set; }
         public bool VerifiedEmail { get; set; }
         public DateTime Birthday { get; set; }
