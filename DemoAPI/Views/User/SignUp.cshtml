@@ -14,7 +14,7 @@
             <input type="text" name="Username" required /><br />
 
             <label for="text">Password</label><br />
-            <input type="text" name="Password" required /><br />
+            <input type="text" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required /><br />
 
             <label for="text">Name</label><br />
             <input type="text" name="Name" required /><br />
@@ -26,7 +26,14 @@
             <input type="text" name="Patronymic" value="" required /><br />
 
             <label for="text">Email</label><br />
-            <input type="text" name="Email" required /><br />
+            <input type="email" name="Email" list="defaultEmails" placeholder="email@example.com" required /><br />
+            <datalist id="defaultEmails">
+                <option value="jbond007@mi6.defence.gov.uk">
+                <option value="jbourne@unknown.net">
+                <option value="nfury@shield.org">
+                <option value="tony@starkindustries.com">
+                <option value="hulk@grrrrrrrr.arg">
+            </datalist>
 
             <label for="text">Birthday</label><br />
             <input type="date" name="Birthday" required /><br />

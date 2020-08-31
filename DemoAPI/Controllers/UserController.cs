@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DemoAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DemoAPI.Controllers
 {
@@ -29,6 +30,8 @@ namespace DemoAPI.Controllers
         [HttpPost]
         public IActionResult SignUp(User user)
         {
+            Context.Entry(user).State = EntityState.Modified;
+            Context.SaveChanges();
 
             return View();
         }
